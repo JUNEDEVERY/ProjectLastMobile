@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu2">
+    <ImageView
+        android:id="@+id/car_image"
+        android:layout_width="366dp"
+        android:layout_height="272dp"
+        android:layout_marginBottom="3dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/button_table"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/car_activity_menu1" />
+    <TableRow
+        android:id="@+id/button_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/element_background"
+            android:shadowColor="@color/black"
+            android:shadowRadius="1"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:text="@string/cars" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMotorcycles"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/element_background"
+            android:shadowColor="@color/black"
+            android:shadowRadius="1"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:text="@string/motorcycles" />
+    </TableRow>
+    <ImageView
+        android:id="@+id/moto_image"
+        android:layout_width="306dp"
+        android:layout_height="267dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_table"
+        app:layout_constraintVertical_bias="0.408"
+        app:srcCompat="@drawable/moto_activity_menu1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
